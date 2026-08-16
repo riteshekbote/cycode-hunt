@@ -29,3 +29,5 @@
 
 ## FINDING INBOX (validated = move to reports/)
 - (empty)
+- 2026-08-16 FINGERPRINT: api.cycode.com → 403 "JWT Token Needed\n\n" on EVERY path probed (/ , /health, /healthz, /api/v1*, /graphql, /openapi.json, /swagger, /.well-known/openid-configuration) — full JWT middleware gate, no unauth surface found passively. app.cycode.com root 200 (SPA). app.eu.cycode.com same SPA. www.cycode.com = WP marketing site (GeneratePress theme, status.cycode.com exists).
+- 2026-08-16 DECISION: Cycode policy allows testing with your own account (only accounts you own, no mass creation). But their ban on automated scanners is explicit ("we may ban your IP"). Strategy: manual single-request probes with PoC only; to test app/api surface requires own account registration (HUMAN step - user decides if they want to create one account).

@@ -18,7 +18,7 @@ rules:
   # So: manual, targeted, read-only probing only. NO bulk fuzzing/scanners.
   manual_read_only: true
   no_automated_scanners: true   # explicit policy clause
-  no_account_creation: true     # (own account only where applicable)
+  no_account_creation: false    # own single account allowed for testing ("only interact with accounts you own"); NO mass creation
   no_data_modification: true
   no_denial_of_service: true
   no_social_engineering: true
