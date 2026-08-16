@@ -1,0 +1,62 @@
+programs:
+  cycode:
+    name: Cycode Bug Bounty Program
+    disclosure_policy: https://cycode.com/bug-bounty-policy/
+    contact: security@cycode.com
+    targets:
+      - app.cycode.com
+      - api.cycode.com
+      - app.eu.cycode.com
+      - api.eu.cycode.com
+      - www.cycode.com
+    github_orgs: []
+    rewards: "min $50 USD, max $1,000 USD; PayPal or wire (invoice required)"
+
+rules:
+  # CRITICAL: Cycode explicitly forbids automated scanning tools — "Do not use any
+  # robot/spider/other automatic device... They're noisy and we may ban your IP."
+  # So: manual, targeted, read-only probing only. NO bulk fuzzing/scanners.
+  manual_read_only: true
+  no_automated_scanners: true   # explicit policy clause
+  no_account_creation: true     # (own account only where applicable)
+  no_data_modification: true
+  no_denial_of_service: true
+  no_social_engineering: true
+  no_pre_disclosure: true
+  redact_secrets_in_commits: true
+
+# Cycode EXCLUSIONS (do not spend cycles, do not report)
+rejected_classes:
+  - "Network-level DoS"
+  - "App DoS by locking user accounts"
+  - "Descriptive error messages/headers (stack traces, banner grabbing)"
+  - "Known public files/dirs (robots.txt)"
+  - "Outdated software/library versions (no exploit)"
+  - "OPTIONS/TRACE HTTP method enabled"
+  - "CSRF on logout / CSRF on anonymous-user forms"
+  - "Cookies lacking HttpOnly/Secure for non-sensitive data"
+  - "Self-XSS"
+  - "Reports from automated scanning without PoC"
+  - "Physical access attacks"
+  - "Social engineering"
+  - "Username enumeration on login/forgot password"
+  - "Enforcement policies for brute force, rate limiting, account lockout"
+  - "SSL/TLS best practices + SSL attacks (BEAST/BREACH/Renegotiation)"
+  - "Clickjacking without specific exploit"
+  - "Mail config (SPF/DKIM/DMARC)"
+  - "Known-vulnerable library without Cycode-specific exploit"
+  - "Password/account recovery policies"
+  - "Autocomplete in form fields"
+  - "Publicly accessible login panels"
+  - "Lack of email verification during registration/invite/password restore"
+  - "Session control during email/password changes"
+
+# What PAYS: valid security issues in the SaaS environment with proven exploit + PoC
+# (IDOR, auth bypass, SSRF, XSS w/ impact, data exposure, etc.)
+
+models:
+  - { id: opencode/big-pickle, name: bigpickle }
+  - { id: opencode/nemotron-3-ultra-free, name: nemotron3 }
+  - { id: opencode/longcat-2.0-free, name: longcat }
+  - { id: opencode/ling-3.0-flash-free, name: ling3 }
+  - { id: opencode/laguna-s-2.1-free, name: laguna }

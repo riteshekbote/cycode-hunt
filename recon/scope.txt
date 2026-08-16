@@ -1,0 +1,8 @@
+# Cycode bug bounty — seed scope (scope = SaaS app/API US+EU + www)
+app.cycode.com
+api.cycode.com
+app.eu.cycode.com
+api.eu.cycode.com
+www.cycode.com
+cycode.com
+status.cycode.com
