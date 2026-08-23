@@ -1,1 +1,10 @@
-[]
+[
+ {
+  "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+  "status": "done"
+ },
+ {
+  "url": "https://cycode.com//js.hsforms.net/forms/embed/v2.js",
+  "status": "error"
+ }
+]
