@@ -111,3 +111,7 @@
 ## jsrecon 2026-08-23 14:17:22 UTC
 - https://cdn.cookielaw.org/scripttemplates/otSDKStub.js (26840B, 0 eps, 0 maps, 0 key-hits)
 - ERR https://cycode.com//js.hsforms.net/forms/embed/v2.js: HTTP Error 404: Not Found
+
+## jsrecon 2026-08-23 14:27:38 UTC
+- https://js.hsforms.net/forms/embed/v2.js (606241B, 1 eps, 0 maps, 0 key-hits)
+    EP /api/embed/error-page/
