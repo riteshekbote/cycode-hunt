@@ -10,5 +10,13 @@
  {
   "url": "https://js.hsforms.net/forms/embed/v2.js",
   "status": "done"
+ },
+ {
+  "url": "https://cycode.com/wp-content/themes/generatepress-child/src-folder/js/vendor/alpinejs.min.js",
+  "status": "done"
+ },
+ {
+  "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js",
+  "status": "done"
  }
 ]

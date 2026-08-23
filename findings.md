@@ -125,3 +125,7 @@
 ## jsrecon 2026-08-23 15:58:04 UTC
 
 ## jsrecon 2026-08-23 16:33:49 UTC
+
+## jsrecon 2026-08-23 16:56:53 UTC
+- https://cycode.com/wp-content/themes/generatepress-child/src-folder/js/vendor/alpinejs.min.js (46346B, 0 eps, 0 maps, 0 key-hits)
+- https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js (72145B, 0 eps, 0 maps, 0 key-hits)
